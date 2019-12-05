@@ -1,0 +1,122 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media only screen and (max-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.nv {
+  margin-left: auto;
+}
+
+.nav-item {
+  margin: 0 2px;
+}
+
+.navbar .dropdown-menu a {
+  font-size: 1.5rem;
+}
+
+.main {
+  height: 80vh;
+  background-image: url(../img/personal-computer-motherboard-4316.jpg);
+  background-size: 100%;
+}
+
+.header {
+  margin: 10rem auto;
+  margin-bottom: 5rem;
+  text-align: center;
+}
+
+.test {
+  height: 100%;
+}
+
+.body__2 {
+  background-color: rgba(110, 110, 119, 0.158);
+}
+
+.card {
+  margin: 1rem;
+  width: 45%;
+  height: 100%;
+}
+
+.list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.center {
+  margin: 0 auto;
+}
+
+.lead {
+  font-size: 1.5rem;
+}
+
+.logo {
+  width: 4.5rem;
+  height: 4.5rem;
+  margin: 1rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.card__about {
+  margin: 3rem;
+  width: 95%;
+  height: 100%;
+}
+
+.center__about {
+  margin: 1rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+/*# sourceMappingURL=main.css.map */
