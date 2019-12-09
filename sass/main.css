@@ -52,7 +52,7 @@ body {
 
 .header {
   margin: 10rem auto;
-  margin-bottom: 5rem;
+  margin-bottom: 1rem;
   text-align: center;
 }
 
@@ -84,11 +84,12 @@ body {
 
 .lead {
   font-size: 1.5rem;
+  text-align: right;
 }
 
 .logo {
-  width: 4.5rem;
-  height: 4.5rem;
+  width: 6.5rem;
+  height: 6.5rem;
   margin: 1rem auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -102,8 +103,8 @@ body {
 }
 
 .card__about {
-  margin: 3rem;
-  width: 95%;
+  margin: 0.5rem;
+  width: 99%;
   height: 100%;
 }
 
@@ -119,4 +120,44 @@ body {
   -ms-flex-align: center;
   align-items: center;
 }
-/*# sourceMappingURL=main.css.map */
+
+.font-small {
+  font-size: 1.2rem;
+}
+
+.h2__p {
+  text-align: center;
+}
+
+.nav__tx {
+  font-size: 1.5rem;
+  padding: 0.1rem 0.5rem;
+  padding-top: 0.4rem;
+}
+
+.nav__tx__2 {
+  font-size: 1.5rem;
+  padding: 0.1rem 0.4rem; 
+}
+
+.story{width:75%;
+  margin:0 auto;
+  box-shadow:0 3rem 6rem rgba(0,0,0,0.1);
+  background-color:rgba(255,255,255,0.6);
+  border-radius:3px;
+  padding:6rem;
+  padding-left:9rem;
+  font-size:1.6rem;
+  transform:skewX(-12deg)
+}
+
+.story__text{transform:skewX(12deg)} 
+
+.flex-warp {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.list-group-item {
+  margin: 0.4rem;
+}
