@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 html {
@@ -29,7 +29,7 @@ html {
 
 body {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .nv {
@@ -45,7 +45,7 @@ body {
 }
 
 .main {
-  height: 80vh;
+  height: 87vh;
   background-image: url(../img/personal-computer-motherboard-4316.jpg);
   background-size: 100%;
 }
@@ -75,7 +75,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .center {
@@ -137,27 +137,155 @@ body {
 
 .nav__tx__2 {
   font-size: 1.5rem;
-  padding: 0.1rem 0.4rem; 
+  padding: 0.1rem 0.4rem;
 }
 
-.story{width:75%;
-  margin:0 auto;
-  box-shadow:0 3rem 6rem rgba(0,0,0,0.1);
-  background-color:rgba(255,255,255,0.6);
-  border-radius:3px;
-  padding:6rem;
-  padding-left:9rem;
-  font-size:1.6rem;
-  transform:skewX(-12deg)
+.story {
+  width: 75%;
+  margin: 0 auto;
+  -webkit-box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 3px;
+  padding: 6rem;
+  padding-left: 9rem;
+  font-size: 1.6rem;
+  -webkit-transform: skewX(-12deg);
+          transform: skewX(-12deg);
 }
 
-.story__text{transform:skewX(12deg)} 
+.story__text {
+  -webkit-transform: skewX(12deg);
+          transform: skewX(12deg);
+}
 
 .flex-warp {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.popup {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+@supports ((-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px))) {
+  .popup {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.popup__content {
+  font-size: 1.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 75%;
+  padding: 5rem;
+  background-color: white;
+  -webkit-box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  overflow: hidden;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%) scale(0.25);
+          transform: translate(-50%, -50%) scale(0.25);
+  -webkit-transition: all .5s .2s;
+  transition: all .5s .2s;
+}
+
+.popup__content--5 {
+  font-size: 1.4rem;
+  width: 90%;
+  height: 90%;
+  padding: 1rem;
+}
+
+.popup:target {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup:target .popup__content {
+  opacity: 1;
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+}
+
+.popup__close:link, .popup__close:visited {
+  padding: 1rem;
+  color: gray;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  font-size: 2rem;
+  text-decoration: none;
+  display: inline-block;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  line-height: 1;
 }
 
 .list-group-item {
   margin: 0.4rem;
 }
+
+.nav {
+  background-color: rgba(26, 25, 25, 0.479);
+}
+
+.nav__list {
+  text-decoration: none;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0 0 0 auto;
+}
+
+.item {
+  margin: 0rem;
+}
+
+.link:link, .link:visited {
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: 300;
+  padding: 1rem 1rem;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  width: 100%;
+  color: white;
+}
+
+.card {
+  margin: 1rem 2rem 0 2rem;
+}
+
+.page-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  height: 14vh;
+}
+/*# sourceMappingURL=main.css.map */
