@@ -117,10 +117,9 @@ body {
   font-size: 1.2rem;
 }
 
-.h2__p {
-  font-size: 2.5rem;
+.h2__p {font-size: 3rem;
   text-align: center;
-}
+  color: red;}
 
 .nav__tx {
   font-size: 1.5rem;
@@ -172,6 +171,7 @@ body {
   visibility: hidden;
   -webkit-transition: all .3s;
   transition: all .3s;
+  
 }
 
 @supports ((-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px))) {
@@ -183,6 +183,9 @@ body {
 }
 
 .popup__content {
+
+
+
   text-align: right;
   font-size: 1.5rem;
   position: absolute;
@@ -204,8 +207,8 @@ body {
 
 .popup__content--5 {
   font-size: 1.4rem;
-  width: 90%;
-  height: 90%;
+  width: 95%;
+  height: 95%;
   padding: 1rem;
 }
 
@@ -225,13 +228,19 @@ body {
   color: gray;
   position: absolute;
   top: 2rem;
-  right: 2rem;
+  left: 2rem;
   font-size: 2rem;
   text-decoration: none;
   display: inline-block;
   -webkit-transition: all .2s;
   transition: all .2s;
   line-height: 1;
+}
+.list-group {
+
+  display:flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
 }
 
 .list-group-item {
@@ -299,11 +308,23 @@ body {
  
 }
 
+.alin-flex {
+  display: flex;
+  justify-content: flex-end;
+  
+}
+
+.row__2 {
+  display: flex;
+  justify-content: flex-end;
+  
+}
+
 .body__2 {
   background-color: rgba(110, 110, 119, 0.158);
   background-size: cover;
-height: 90vh;
-}
+  height: 90vh;
+  }
 
 .test-flex {
   display: flex;
@@ -343,4 +364,15 @@ height: 90vh;
   padding-left:0 ;
   padding-right:0 ;
 }
-/*# sourceMappingURL=main.css.map */
+
+.ut--align {  
+  
+  /*align-items: center;
+  flex-direction: column;
+  align-content: center;
+  align-self: center;
+*/
+  display: flex;
+  justify-content: center;
+  margin-top: .5rem;
+}
