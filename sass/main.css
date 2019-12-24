@@ -77,6 +77,7 @@ body {
 .lead {
   font-size: 1.5rem;
   text-align: right;
+  padding: 1.2rem;
 }
 
 .logo {
@@ -94,11 +95,6 @@ body {
   align-items: center;
 }
 
-.card__about {
-  margin: 0.5rem;
-  width: 99%;
-  height: 100%;
-}
 
 .center__about {
   margin: 1rem auto;
@@ -295,36 +291,35 @@ body {
   width: 100%;
 
 }
+/*
 .card {
   margin: 1rem 2rem 0 2rem;
 }
-
+*/
 .test-f {
   display: block;
 }
+
 .page-footer {
   
  display: block;
- 
+ width: 100%;
 }
 
 .alin-flex {
   display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
   justify-content: flex-end;
+  height: 100vh;
   
 }
 
-.row__2 {
-  display: flex;
-  justify-content: flex-end;
-  
-}
-
-.body__2 {
+.ul--back {
   background-color: rgba(110, 110, 119, 0.158);
   background-size: cover;
-  height: 90vh;
-  }
+  
+}
 
 .test-flex {
   display: flex;
@@ -332,24 +327,16 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-
-.body__3 {
-  background-color: rgba(110, 110, 119, 0.158);
-  background-size: cover;
-
-  margin-bottom: auto;
-
-}
-
+/*
 .card {
   margin: 1rem;
   width: 45%;
+  padding-left:0 ;
+  padding-right:0 ;
+  min-height: 21.5rem;
+  
 }
-.row {
-  display: flex;
-  align-items: stretch;
-}
-
+*/
 
 
 .page-footer--h {
@@ -360,19 +347,162 @@ body {
 }
 
 
-.card {
-  padding-left:0 ;
-  padding-right:0 ;
-}
-
 .ut--align {  
-  
-  /*align-items: center;
-  flex-direction: column;
-  align-content: center;
-  align-self: center;
-*/
   display: flex;
   justify-content: center;
   margin-top: .5rem;
+}
+
+/*
+///////////////////////////////////////////////////////////////
+///////////////////////////////////////
+//////////////////////////////////////////////////////////////*/
+
+@import url(https://fonts.googleapis.com/css?family=Condiment|Lato:100,400);
+@import url(https://markmurray.co/codepen/entypostyle.css);
+
+
+.container--2 {
+  position: relative;
+  width: 40%;
+  min-height: 21.5rem;  
+  z-index: 1;
+  perspective: 1000px;
+  margin: 1rem;
+  
+     
+}
+
+.container--2 .card {
+  
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 600ms linear;
+  /* border-radius: 5%; */
+  
+  border-top-right-radius: 2rem;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+
+  min-height: 21.5rem;
+  margin-bottom: 5rem;
+}
+
+
+
+
+
+
+button {
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.9);
+  font: 1rem 'Lato', sans-serif;
+  background: rgba(16, 215, 175, 0.95);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  box-shadow: 0 4px 0 0 #0b9075;
+  cursor: pointer;
+  position: fixed;
+  z-index: 10;
+  top: 40%;
+  right: 40%;
+}
+
+
+
+
+
+
+
+
+
+.container--2 .card .face {
+  position: absolute;
+  
+  width: 100%;
+
+  backface-visibility: hidden;
+  /* background: #689dc9; */
+  background: #282e33;
+  border-top-right-radius: 2rem;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+
+  min-height: 21.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+.container--2 .card .front {
+  overflow: hidden;
+  z-index: 2;
+}
+
+
+
+
+.container--2 .card .back {
+  display: block;
+  transform: rotateX(180deg);
+  box-sizing: border-box;
+  padding: 30px;
+  color: #000;
+  background: #282e33;
+  /* background: #274761; */
+  z-index: 11111;
+  font-family: 'Lato', sans-serif;
+}
+
+
+
+
+
+.container--2:hover .card {
+  transform: rotateX(180deg);
+}
+
+
+
+
+
+@keyframes wobble-vertical {
+  16.65% {
+    transform: translateY(8px);
+  }
+  33.3% {
+    transform: translateY(-4px);
+  }
+  49.95% {
+    transform: translateY(3px);
+  }
+  66.6% {
+    transform: translateY(-1px);
+  }
+  83.25% {
+    transform: translateY(1px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.wobble-vertical {
+  display: inline-block;
+}
+.wobble-vertical:hover {
+  animation-name: wobble-vertical;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
 }
