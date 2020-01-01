@@ -3,6 +3,7 @@
   padding: 0;
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
+
 }
 
 html {
@@ -45,20 +46,35 @@ body {
 }
 
 .main {
-  height: 87vh;
+  height: 100vh;
   background-image: url(../img/personal-computer-motherboard-4316.jpg);
-  background-size: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Lemonada', cursive;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .header {
   font-size: 4rem;
-  margin: 10rem auto;
+  margin: 5rem auto;
   margin-bottom: 1rem;
   text-align: center;
 }
 
+
+@media only screen and (max-width: 50.8125em) {
+  .header {
+    font-size: 2.5rem;
+  }
+
+}
+
+
 .test {
-  height: 100%;
+  flex-basis: 100%;
 }
 
 
@@ -113,10 +129,21 @@ body {
   font-size: 1.2rem;
 }
 
-.h2__p {font-size: 3rem;
+.h2__p {
+  font-size: 2.5rem;
   text-align: center;
-  color: red;}
+  color: #ffbb33;
+  padding-bottom: 1rem;
+}
 
+
+@media only screen and (max-width: 50.8125em) {
+
+  .h2__p {
+    font-size: 1.5rem;
+  }
+
+}
 .nav__tx {
   font-size: 1.5rem;
   padding: 0.1rem 0.5rem;
@@ -167,7 +194,8 @@ body {
   visibility: hidden;
   -webkit-transition: all .3s;
   transition: all .3s;
-  padding: 5%;
+  padding: 2.5%;
+  overflow-y: scroll;
 }
 
 @supports ((-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px))) {
@@ -280,9 +308,10 @@ body {
   width: 100%;
 }
 
-.link--h:link, .link--h:visited {
+.link--h:link, 
+.link--h:visited {
   display: inline-block;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 300;
   padding: 1rem 1rem;
   color: #fff;
@@ -291,8 +320,29 @@ body {
   width: 100%;
 
 }
-.test-f {
-  display: block;
+
+
+@media only screen and (max-width: 50.9em) {
+
+  .link--h:link, 
+  .link--h:visited {
+
+    font-size: 1.2rem;
+
+  }
+  
+}
+
+@media only screen and (max-width: 34.4375em) {
+
+  .link--h:link, 
+  .link--h:visited {
+
+    font-size: 1rem;
+
+  }
+
+
 }
 
 .page-footer {
@@ -360,11 +410,12 @@ body {
 
 .container--2 {
   position: relative;
-  width: 40%;
-  min-height: 21.5rem;  
+  width: 30rem;
+  min-height: 37rem;  
   z-index: 1;
   perspective: 1000px;
   margin: 1rem;
+  margin-bottom: 8rem ;
   
 }
 
@@ -385,15 +436,12 @@ body {
   height: 100%;
   transform-style: preserve-3d;
   transition: all 600ms linear;
-  /* border-radius: 5%; */
   
-  border-top-right-radius: 2rem;
-  border-top-left-radius: 2rem;
-  border-bottom-left-radius: 2rem;
-  border-bottom-right-radius: 2rem;
-
-  min-height: 21.5rem;
+  border-radius: 2rem;
+  min-height: 37rem;
   margin-bottom: 5rem;
+
+  
 }
 
 
@@ -427,18 +475,15 @@ button {
 
 .container--2 .card .face {
   position: absolute;
-  
   width: 100%;
 
   backface-visibility: hidden;
-  /* background: #689dc9; */
-  background: #282e33;
-  border-top-right-radius: 2rem;
-  border-top-left-radius: 2rem;
-  border-bottom-left-radius: 2rem;
-  border-bottom-right-radius: 2rem;
+  background-color: #fff;
+  
+  border-radius: 2rem;
 
-  min-height: 21.5rem;
+  min-height: 37rem;
+
 }
 
 
@@ -515,4 +560,19 @@ button {
 
 .btn {
   font-size: 1.4rem;
+}
+
+
+
+.card-header-title {
+  font-family: Lato ;
+  font-weight: 900;
+}
+
+
+
+.card-img-top {
+
+  width: 100%;
+  height: 10rem;
 }
