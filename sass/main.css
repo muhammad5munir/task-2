@@ -321,6 +321,21 @@ about
 }
 /* ////////////////////////////////////////////////////////////////////////////////////
 */
+
+.link--2:link, .link--2:visited {
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 1rem .5rem;
+  /* color: rgb(148, 144, 144); */
+  /* color: rgb(80, 77, 77); */
+  color: #000;
+  text-transform: uppercase;
+  text-decoration: none;
+  width: 100%;
+}
+
+
 .link:link, .link:visited {
   display: inline-block;
   font-size: 1.2rem;
@@ -365,6 +380,24 @@ about
   border-bottom: 1px solid  rgb(148, 144, 144);
 
 }
+
+
+.link--2:link:hover , 
+.link--2:visited:hover
+{
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 1rem .7rem;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  width: 100%;
+  background-color: rgb(29, 27, 27);
+  border-bottom: 1px solid  rgb(148, 144, 144);
+
+}
+
 
 
 @media only screen and (max-width: 50.9em) {
@@ -623,7 +656,7 @@ overflow-y: scroll;
 
 
 .form-control {
-  max-width: 4rem;
+  min-width: 5rem;
   margin-left: .5rem;
   margin-top: .5rem ;
 }
@@ -638,13 +671,25 @@ font-family: 'Lemonada', cursive;
 font-weight: 400;
 flex: 1 0 11rem;
 margin: 1rem 45% 1rem 45% ;
-
+transition: all .2s;
 }
 
 
 .search-bt:hover {
-  margin-bottom: .5rem;
-}
+  transform: translateY(.3rem);
+} 
+
+.search-link:hover{
+  color: #000;
+
+} 
+ 
+
+
+ .search-link {
+  color: #fff;
+  text-decoration: none;
+ }
 
 
 .second--header {
