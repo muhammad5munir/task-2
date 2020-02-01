@@ -6,6 +6,11 @@
 
 }
 
+
+@import url(https://fonts.googleapis.com/css?family=Condiment|Lato:100,400);
+@import url(https://markmurray.co/codepen/entypostyle.css);
+
+
 html {
   font-size: 62.5%;
 }
@@ -34,11 +39,6 @@ body {
   overflow-x: hidden;
 }
 
-
-.navbar .dropdown-menu a {
-  font-size: 1.5rem;
-}
-
 .main {
   min-height: 100vh;
   background-size: cover;
@@ -64,11 +64,6 @@ body {
 
 }
 
-/* 
-.test {
-  flex-basis: 100%;
-} */
-
 
 .list {
   display: -webkit-box;
@@ -78,12 +73,6 @@ body {
   flex-wrap: wrap;
 }
 
-
-.lead {
-  font-size: 1.5rem;
-  text-align: right;
-  padding: 1.2rem;
-}
 
 .logo {
   width: 12.5rem;
@@ -136,8 +125,8 @@ body {
   .h2__p {
     font-size: 1.7rem;
   }
-
 }
+
 .nav__tx {
   font-size: 1.5rem;
   padding: 0.1rem 0.5rem;
@@ -201,9 +190,6 @@ body {
 }
 
 .popup__content {
-
-
-
   text-align: right;
   font-size: 1.5rem;
   position: absolute;
@@ -254,8 +240,8 @@ body {
   transition: all .2s;
   line-height: 1;
 }
-.list-group {
 
+.list-group {
   display:flex;
   justify-content: flex-end;
   flex-wrap: wrap;
@@ -291,35 +277,7 @@ body {
 }
 
 /*
-about
-*/
-.link__ab {
- 
-  display: inline-block;
-  font-size: 1.2rem;
-  font-weight: bold;
-  padding: 1rem .3rem;
-  color: rgb(80, 77, 77);
-  text-transform: uppercase;
-  text-decoration: none;
-  width: 100%;
-}
-
-.link__ab:hover {
-  
-  display: inline-block;
-  font-size: 1.2rem;
-  font-weight: bold;
-  padding: 1rem .7rem;
-  color: #fff;
-  text-transform: uppercase;
-  text-decoration: none;
-  width: 100%;
-  background-color: rgb(29, 27, 27);
-  border-bottom: 1px solid  rgb(148, 144, 144);
-
-}
-/* ////////////////////////////////////////////////////////////////////////////////////
+ ////////////////////////////////////////////////////////////////////////////////////
 */
 
 .link--2:link, .link--2:visited {
@@ -327,8 +285,6 @@ about
   font-size: 1.2rem;
   font-weight: bold;
   padding: 1rem .5rem;
-  /* color: rgb(148, 144, 144); */
-  /* color: rgb(80, 77, 77); */
   color: #000;
   text-transform: uppercase;
   text-decoration: none;
@@ -341,8 +297,6 @@ about
   font-size: 1.2rem;
   font-weight: bold;
   padding: 1rem .5rem;
-  /* color: rgb(148, 144, 144); */
-  /* color: rgb(80, 77, 77); */
   color: #fff;
   text-transform: uppercase;
   text-decoration: none;
@@ -357,12 +311,11 @@ about
   font-size: 1.2rem;
   font-weight: bold;
   padding: 1rem .7rem;
-  color: #fff;
+  color: #000;
   text-transform: uppercase;
   text-decoration: none;
   width: 100%;
-  background-color: rgb(29, 27, 27);
-  border-bottom: 1px solid  rgb(148, 144, 144);
+  border-bottom: 1px solid  rgb(29, 27, 27);
 }
 
 .link:link:hover , 
@@ -389,12 +342,10 @@ about
   font-size: 1.2rem;
   font-weight: bold;
   padding: 1rem .7rem;
-  color: #fff;
   text-transform: uppercase;
   text-decoration: none;
   width: 100%;
-  background-color: rgb(29, 27, 27);
-  border-bottom: 1px solid  rgb(148, 144, 144);
+  border-bottom: 1px solid  rgb(29, 27, 27);
 
 }
 
@@ -404,27 +355,19 @@ about
 
   .link--h:link, 
   .link--h:visited {
-
     font-size: 1.2rem;
-
   }
-  
 }
 
 @media only screen and (max-width: 34.4375em) {
 
   .link--h:link, 
   .link--h:visited {
-
     font-size: 1rem;
-
   }
-
-
 }
 
 .page-footer {
-  
  display: block;
  width: 100%;
  align-self: flex-end;
@@ -440,17 +383,16 @@ about
 }
 
 .ul--back {
-  background-image: linear-gradient(to left ,rgba(0,0,0, 0.5),rgba(0,0,0, 0.5) ) , url(../img/9.jpg);
+  background-image: linear-gradient(to left ,rgba(0,0,0, 0.5),rgba(0,0,0, 0.5) ) , url(../img/11.jpg);
   overflow-y: scroll;
   max-height: 300vh;
 }
 
-.ul--back__ab {
-background-color: rgba(110, 110, 119, 0.158);
-background-size: cover;
-overflow-y: scroll;
 
+.ul--back__ab {
+overflow-y: scroll;
 }
+
 
 .test-flex {
   display: flex;
@@ -475,14 +417,6 @@ overflow-y: scroll;
   margin-top: .5rem;
 }
 
-/*
-///////////////////////////////////////////////////////////////
-///////////////////////////////////////
-//////////////////////////////////////////////////////////////*/
-
-@import url(https://fonts.googleapis.com/css?family=Condiment|Lato:100,400);
-@import url(https://markmurray.co/codepen/entypostyle.css);
-
 
 .container--2 {
   position: relative;
@@ -490,9 +424,8 @@ overflow-y: scroll;
   min-height: 37rem;  
   z-index: 1;
   perspective: 1000px;
-  margin: 1rem;
-  margin-bottom: 1rem;
-  
+  margin: 1rem;  
+  padding-left: .3rem;
 }
 
 
@@ -500,27 +433,10 @@ overflow-y: scroll;
 
 
   .container--2 {
-    width: 100%;
+    margin: 1rem auto;
   }
 
-}
-
-
-.container--2 .card {
-  
-  width: 100%;
-  height: 100%;
-  transform-style: preserve-3d;
-  transition: all 600ms linear;
-  border-radius: 2rem;
-  min-height: 37rem;
-  margin-bottom: 5rem;
-
-  
-}
-
-
-
+} 
 
 
 
@@ -541,110 +457,6 @@ overflow-y: scroll;
 }
 
 
-
-
-
-
-
-
-
-.container--2 .card .face {
-  position: absolute;
-  width: 100%;
-  backface-visibility: hidden;
-  background-color: #fff;
-  border-radius: 2rem;
-  min-height: 37rem;
-
-}
-
-
-
-
-
-
-
-
-
-
-
-.container--2 .card .front {
-  overflow: hidden;
-  z-index: 2;
-}
-
-
-
-
-.container--2 .card .back {
-  display: block;
-  transform: rotateX(180deg);
-  box-sizing: border-box;
-  padding: 30px;
-  color: #000;
-  background: #274761;
-  z-index: 11111;
-  font-family: 'Lato', sans-serif;
-}
-
-
-
-
-
-.container--2:hover .card {
-  transform: rotateX(180deg);
-}
-
-
-
-
-
-@keyframes wobble-vertical {
-  16.65% {
-    transform: translateY(8px);
-  }
-  33.3% {
-    transform: translateY(-4px);
-  }
-  49.95% {
-    transform: translateY(3px);
-  }
-  66.6% {
-    transform: translateY(-1px);
-  }
-  83.25% {
-    transform: translateY(1px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
-
-.wobble-vertical {
-  display: inline-block;
-}
-
-.wobble-vertical:hover {
-  animation-name: wobble-vertical;
-  animation-duration: 1s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: 1;
-}
-
-
-
-.card-header-title {
-  font-family: Lato ;
-  font-weight: 900;
-}
-
-
-
-.card-img-top {
-  width: 100%;
-  height: 10rem;
-}
 
 
 
@@ -686,10 +498,10 @@ transition: all .2s;
  
 
 
- .search-link {
+.search-link {
   color: #fff;
   text-decoration: none;
- }
+}
 
 
 .second--header {
@@ -718,10 +530,8 @@ transition: all .2s;
 
 @media only screen and (max-width: 73.681em) {
 
-
   .home__img {
     margin-top: 5rem;
-
   }
 }
 
@@ -731,13 +541,9 @@ transition: all .2s;
 
 @media only screen and (max-width: 51.8125em) {
 
-
   .home__img {
     width: 30rem;
-
   }
-
-
 }
 
 
@@ -761,7 +567,6 @@ transition: all .2s;
     flex-wrap: wrap;
     justify-content: center; 
   }
-
   
   .home__img {
    order: 2;
@@ -772,3 +577,271 @@ transition: all .2s;
   }
 
 }
+
+@media (min-width: 576px) {
+  .jumbotron {
+    padding: 2rem 1rem;
+  }
+}
+
+
+
+/*
+card
+*/
+
+
+
+article.card--2 {
+  width: 350px;
+  height: 350px;
+  border-radius: 3px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+
+article.card--2 .infos {
+  width: auto;
+  height: 350px;
+  position: relative;
+  padding: 14px 24px;
+  background: #fff;
+  -webkit-transition: 0.4s 0.15s cubic-bezier(0.17, 0.67, 0.5, 1.03);
+  transition: 0.4s 0.15s cubic-bezier(0.17, 0.67, 0.5, 1.03);
+}
+
+
+article.card--2 .infos .title--2 {
+  position: relative;
+  margin: 10px 0;
+  letter-spacing: 3px;
+  color: #152536;
+  font-family: "Grotesque Black", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 0 0 0px #32577f;
+  text-align: center;
+  
+}
+
+
+
+article.card--2 .infos .txt {
+  text-align: right;
+  line-height: 2;
+  font-size: 1.5rem;
+  color: rgba(21, 37, 54, 0.7);
+  opacity: 0;
+  -webkit-transition: 0.5s 0.25s cubic-bezier(0.17, 0.67, 0.5, 1.03);
+  transition: 0.5s 0.25s cubic-bezier(0.17, 0.67, 0.5, 1.03);
+}
+
+
+
+article.card--2:hover .infos {
+  -webkit-transform: translateY(-260px);
+  transform: translateY(-260px);
+}
+
+article.card--2:hover .infos .seats, article.card--2:hover .infos .txt, article.card--2:hover .infos .details {
+  opacity: 1;
+}
+
+
+
+
+article.card--2 .infos .details {
+ 
+  color: rgba(255, 255, 255, 0.9);
+  font: 1.2rem 'Lato', sans-serif;
+  background: rgba(16, 215, 175, 0.95);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  box-shadow: 0 4px 0 0 #0b9075;
+  cursor: pointer;
+ 
+ 
+  position: absolute;
+  right: 0;
+  right: 0;
+  bottom: 0;
+  margin: 1rem .7rem;
+  letter-spacing: 1px;
+  color: #000;
+  opacity: 0;
+  -webkit-transition: 0.5s 0.25s cubic-bezier(0.17, 0.67, 0.5, 1.03);
+  transition: 0.5s 0.25s cubic-bezier(0.17, 0.67, 0.5, 1.03);
+}
+
+
+
+
+/*
+thumb
+*/
+
+article.card--2 .thumb__1 {
+  width: auto;
+  height: 260px;
+  background: url(../img/1.jpg) no-repeat center;
+  background-size: cover;
+  border-radius: 3px;
+}
+
+
+
+article.card--2 .thumb__2 {
+  width: auto;
+  height: 260px;
+  background: url(../img/2.jpg) no-repeat center;
+  background-size: cover;
+  border-radius: 3px;
+}
+
+
+article.card--2 .thumb__3 {
+  width: auto;
+  height: 260px;
+  background: url(../img/3.jpg) no-repeat center;
+  background-size: cover;
+  border-radius: 3px;
+}
+
+
+
+article.card--2 .thumb__4 {
+  width: auto;
+  height: 260px;
+  background: url(../img/4.jpg) no-repeat center;
+  background-size: cover;
+  border-radius: 3px;
+}
+
+
+article.card--2 .thumb__5 {
+  width: auto;
+  height: 260px;
+  background: url(../img/5.jpg) no-repeat center;
+  background-size: cover;
+  border-radius: 3px;
+}
+
+
+
+article.card--2 .thumb__6 {
+  width: auto;
+  height: 260px;
+  background: url(../img/6.jpg) no-repeat center;
+  background-size: cover;
+  border-radius: 3px;
+}
+
+
+article.card--2 .thumb__7 {
+  width: auto;
+  height: 260px;
+  background: url(../img/7.jpg) no-repeat center;
+  background-size: cover;
+  border-radius: 3px;
+}
+
+
+
+article.card--2 .thumb__8 {
+  width: auto;
+  height: 260px;
+  background: url(../img/8.png) no-repeat center;
+  background-size: cover;
+  border-radius: 3px;
+}
+
+
+article.card--2 .thumb__9 {
+  width: auto;
+  height: 260px;
+  background: url(../img/9.jpg) no-repeat center;
+  background-size: cover;
+  border-radius: 3px;
+}
+
+
+/*
+pop up
+*/
+
+ ol.gradient-list > li, ol.gradient-list > li::before {
+	 box-shadow: 0.25rem 0.25rem 0.6rem rgba(0, 0, 0, 0.05), 0 0.5rem 1.125rem rgba(75, 0, 0, 0.05);
+}
+ ol.gradient-list {
+	 counter-reset: gradient-counter;
+	 list-style: none;
+	 margin: 1.75rem 0;
+	 padding-left: 1rem;
+}
+ ol.gradient-list > li {
+	 background: white;
+	 border-radius: 0 0.5rem 0.5rem 0.5rem;
+	 counter-increment: gradient-counter;
+	 margin-top: 1rem;
+	 min-height: 3rem;
+	 padding: 1rem 1rem 1rem 3rem;
+	 position: relative;
+}
+ ol.gradient-list > li::before, ol.gradient-list > li::after {
+	 background: linear-gradient(135deg, #83e4e2 0%, #a2ed56 100%);
+	 border-radius: 1rem 1rem 0 1rem;
+	 content: '';
+	 height: 3rem;
+	 left: -1rem;
+	 overflow: hidden;
+	 position: absolute;
+	 top: -1rem;
+	 width: 3rem;
+}
+ ol.gradient-list > li::before {
+	 align-items: flex-end;
+	 content: counter(gradient-counter);
+	 color: #1d1f20;
+	 display: flex;
+	 font: 900 1.5em/1 'Montserrat';
+	 justify-content: flex-end;
+	 padding: 0.125em 0.25em;
+	 z-index: 1;
+}
+ ol.gradient-list > li:nth-child(10n+1):before {
+	 background: linear-gradient(135deg, rgba(162, 237, 86, 0.2) 0%, rgba(253, 220, 50, 0.2) 100%);
+}
+ ol.gradient-list > li:nth-child(10n+2):before {
+	 background: linear-gradient(135deg, rgba(162, 237, 86, 0.4) 0%, rgba(253, 220, 50, 0.4) 100%);
+}
+ ol.gradient-list > li:nth-child(10n+3):before {
+	 background: linear-gradient(135deg, rgba(162, 237, 86, 0.6) 0%, rgba(253, 220, 50, 0.6) 100%);
+}
+ ol.gradient-list > li:nth-child(10n+4):before {
+	 background: linear-gradient(135deg, rgba(162, 237, 86, 0.8) 0%, rgba(253, 220, 50, 0.8) 100%);
+}
+ ol.gradient-list > li:nth-child(10n+5):before {
+	 background: linear-gradient(135deg, rgba(162, 237, 86, 1) 0%, rgba(253, 220, 50, 1) 100%);
+}
+ ol.gradient-list > li:nth-child(10n+6):before {
+	 background: linear-gradient(135deg, rgba(162, 237, 86, 0.8) 0%, rgba(253, 220, 50, 0.8) 100%);
+}
+ ol.gradient-list > li:nth-child(10n+7):before {
+	 background: linear-gradient(135deg, rgba(162, 237, 86, 0.6) 0%, rgba(253, 220, 50, 0.6) 100%);
+}
+ ol.gradient-list > li:nth-child(10n+8):before {
+	 background: linear-gradient(135deg, rgba(162, 237, 86, 0.4) 0%, rgba(253, 220, 50, 0.4) 100%);
+}
+ ol.gradient-list > li:nth-child(10n+9):before {
+	 background: linear-gradient(135deg, rgba(162, 237, 86, 0.2) 0%, rgba(253, 220, 50, 0.2) 100%);
+}
+ ol.gradient-list > li:nth-child(10n+10):before {
+	 background: linear-gradient(135deg, rgba(162, 237, 86, 0) 0%, rgba(253, 220, 50, 0) 100%);
+}
+ ol.gradient-list > li + li {
+	 margin-top: 2rem;
+}
+ 
